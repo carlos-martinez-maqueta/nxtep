@@ -8,10 +8,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100;9..40,200;9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" type="text/css" href="index.css">
-    <link rel="stylesheet" type="text/css" href="nosotros.css">
-    <link rel="stylesheet" type="text/css" href="eventos.css">
-    <link rel="stylesheet" type="text/css" href="mentorias.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/index.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/nosotros.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/eventos.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/mentorias.css">
 
-    <link rel="stylesheet" type="text/css" href="media.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/media.css">
   </head>

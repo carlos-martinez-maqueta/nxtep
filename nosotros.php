@@ -97,7 +97,11 @@
               <div class="tab-content" id="pills-tabContent">
                 <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
                   <div class="row">
+<<<<<<< HEAD
                       <div class="col-lg-3">
+=======
+                    <div class="col-lg-3">
+>>>>>>> de4412746dec0a0f24af8b071b84421837d80bdb
                       <div class="card_item_me">
                         <div class="flex_price_star">
                           <div><img src="assets/img/star.png" class="me-lg-2">10</div>

@@ -1,0 +1,152 @@
+#section_banner_eventos{
+	padding: 110px 0px 110px;
+}
+.section_linkedin{
+	padding: 80px 0px;
+}
+.title_in h2{
+	font-family: Helvetica Neue;
+	font-size: 32px;
+	font-weight: 700;
+	line-height: 54px;
+	letter-spacing: 0em;
+	text-align: center;
+	margin-bottom: 70px;
+}
+.section_linkedin a{
+	background-color: #FF451C;
+    padding: 15px 22px;
+    text-decoration: none;
+    color: #ffffff;
+    border-radius: 50px;
+}
+.a_link_in{
+	margin-top: 63px;
+}
+.section_linkedin a img{
+	margin-right: 8px;
+}
+.eventos_list{
+	padding: 95px 0px 50px;
+	background-color: #F2F2F2;
+}
+.eventos_list .title_p_eventos{
+	margin-bottom: 68px;
+}
+.eventos_list .title_p_eventos h2{
+	font-family: Helvetica Neue;
+	font-size: 32px;
+	font-weight: 700;
+	line-height: 54px;
+	letter-spacing: 0em;
+	text-align: center;
+	color: #2C2C2C;
+	margin-bottom: 25px;
+}
+.eventos_list .title_p_eventos p{
+	font-family: 'DM Sans', sans-serif;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 23px;
+	letter-spacing: 0.02em;
+	text-align: center;
+}
+
+.eventos_list .card_evento_item{
+    border-radius: 16px;
+    background-color: #ffffff;
+    box-shadow: 0px 1px 16px 1px #0000001f;  
+}
+.eventos_list .card_evento_item .img_evento{
+	position: relative;
+}
+.eventos_list .card_evento_item .img_evento .limitados{
+	position: absolute;
+    top: 10px;
+    right: 20px;
+    background-color: #FF451C;
+    border-radius: 60px;
+    padding: 3px;
+}
+.eventos_list .card_evento_item .img_evento .limitados p{
+	font-family: 'DM Sans', sans-serif;
+	font-size: 12px;
+	font-weight: 500;
+	line-height: 20px;
+	letter-spacing: 0em;
+	text-align: left;
+	color: #ffffff;
+	margin: 0px;
+}
+.eventos_list .card_evento_item .img_evento .agotado{
+	position: absolute;
+    top: 10px;
+    right: 20px;
+    background-color: #030303;
+    border-radius: 60px;
+    padding: 3px 35px;
+}
+.eventos_list .card_evento_item .img_evento .agotado p{
+	font-family: 'DM Sans', sans-serif;
+	font-size: 12px;
+	font-weight: 500;
+	line-height: 20px;
+	letter-spacing: 0em;
+	text-align: left;
+	color: #ffffff;
+	margin: 0px;
+}
+.eventos_list .card_evento_item .img_evento img{
+	border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+.eventos_list .card_evento_item .info_evento{
+	padding: 25px 30px 50px;
+}
+.eventos_list .card_evento_item .info_evento p{
+	font-family: 'DM Sans', sans-serif;
+	color: #1B1B1B;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 23px;
+	letter-spacing: 0.02em;
+	text-align: left;
+}
+.eventos_list .card_evento_item .info_evento span{
+	font-family: 'DM Sans', sans-serif;
+	color: #1B1B1B;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 21px;
+	letter-spacing: 0.02em;
+	text-align: left;
+}
+.eventos_list .card_evento_item .info_evento ul{
+   	padding: 12px 10px 10px;
+    list-style: none;
+}
+.eventos_list .card_evento_item .info_evento ul li p{
+	font-family: 'DM Sans', sans-serif;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 21px;
+	letter-spacing: 0.02em;
+	text-align: left;
+	color: #FF451C;
+}
+.eventos_list .card_evento_item .incribete_a_evento a{
+    background-color: #FF451C;
+    border-radius: 55px;
+    display: block;
+    width: 100%;
+    padding: 20px 0px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 21px;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #ffffff;
+    text-decoration: none;   
+    box-shadow: 0px 6px 10px 0px #00000029;
+}

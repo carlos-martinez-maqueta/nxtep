@@ -1,0 +1,144 @@
+@media (max-width: 480px) {
+	.section_banner_home{
+		padding: 22px 0px 50px;
+	}
+	.info_banner{
+		margin-top: 20px;
+	}
+	.section_banner_home .info_banner h2{
+		font-size: 46px;
+	}
+	.section_banner_home .info_banner p{
+		text-align: center;
+	}
+	.section_banner_home .info_banner .button_a_banner a{
+	    width: 100%;
+	    display: block;
+	}
+	.order_1_res{
+		order: 1;
+	}
+	.order_2_res{
+		order: 2;
+	}
+	.section_banner_home .card_op{
+		text-align: center;
+		padding: 16px;
+	}
+	.section_nosotros_home{
+		padding: 32px 0px;
+	}
+	.section_nosotros_home .titles_parrafo_n h2{
+		font-size: 24px;
+		font-weight: 700;
+		line-height: 30px;
+		letter-spacing: 0em;
+		text-align: center;
+	}
+	.section_nosotros_home .titles_parrafo_n p{
+		margin: 20px 0px;
+	}
+	.section_nosotros_home .card_n .fondo_n{
+		text-align: center;
+	}
+	.card_n{
+		margin-bottom: 20px;
+	}
+	.section_nosotros_home .div_center_button a{
+		width: 100%;
+		display: block;
+	}
+	.voluntariado {
+	    padding: 32px 0px;
+	}
+	.voluntariado .div_titles_volun h2{
+		text-align: center;
+		font-size: 24px;
+		font-weight: 700;
+		line-height: 30px;
+		letter-spacing: 0em;
+	}
+	.voluntariado .div_titles_volun p{
+		text-align: center;
+		margin: 15px 0px;
+	}
+	.voluntariado .div_titles_volun p br{
+		display: none;
+	}
+	.voluntariado .div_titles_volun .buton_volun {
+	    margin-top: 35px;
+	    margin-bottom: 35px;
+	    text-align: center;
+	}
+	.mentores .fondo_image{
+		padding: 22px 0px;
+	}
+	.mentores .title_mentoria h2{
+		margin-bottom: 15px;
+		font-size: 26px;
+		font-weight: 700;
+		line-height: 30px;
+		letter-spacing: 0em;
+		text-align: center;
+	}
+	.mentores .fondo_image{
+		background-size: cover;
+	}
+	.mentores .div_ment_1{
+		height: auto;
+	}
+	.mentores .div_ment_1 p{
+		margin-bottom: 10px;
+	}
+	.div_ment_2 .d_flex_ment span br{
+		display: none;
+	}
+	.mentores .div_ment_3 p{
+		margin-bottom: 30px;
+	}
+	.div_titles_volun{
+		padding: 0px 15px 0px;
+	}
+	.voluntariado .div_titles_volun .buton_volun a{
+		width: 100%;
+		display: block;
+	}
+	.section_boletin{
+		padding: 30px 0px;
+	}
+	.section_boletin form{
+		width: 100%;
+	}
+	.section_boletin .titles_parrafo_n p br{
+		display: none;
+	}
+	.div_flex_form_boletin{
+		display: block;
+	}
+	.div_flex_form_boletin button{
+		width: 100%;
+	    display: block;
+	    margin: 20px 0px 0px;
+	}
+
+	.footer_all .flex_logo_redes ul{
+		display: block;
+		text-align: center;
+	}
+	.footer_all .flex_logo_redes{
+		display: block;
+	}
+	.footer_all .flex_logo_redes .ul_redes_sociales{
+	    display: flex;
+	    width: fit-content;
+	    margin: 25px auto;
+	}
+	.footer_all .ul_vistas{
+		width: fit-content;
+	    margin: auto;
+	    float: inherit;
+	}
+	.footer_all .ul_vistas li{
+		padding: 0px 8px;
+	}
+}

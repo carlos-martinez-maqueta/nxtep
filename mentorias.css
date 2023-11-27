@@ -1,0 +1,296 @@
+.section_banner_mentor{
+	padding: 64px 0px;
+}
+.section_banner_mentor .title_mentorias h2{
+	font-family: Helvetica Neue;
+	font-size: 32px;
+	font-weight: 700;
+	line-height: 32px;
+	letter-spacing: 0em;
+	margin-bottom: 15px;
+}
+.section_banner_mentor .title_mentorias p{
+	font-family: 'DM Sans', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+	letter-spacing: 0.02em;
+}
+.section_banner_mentor .seach_mentor_a a{
+	background-color: #FF451C;
+    border-radius: 55px;
+    display: block;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 21px;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #ffffff;
+    text-decoration: none;
+    box-shadow: 0px 6px 10px 0px #00000029;
+    width: fit-content;
+    padding: 15px 17px 15px 40px;
+    margin: auto;
+}
+.section_banner_mentor .seach_mentor_a{
+	margin: 32px 0px;
+}
+.section_banner_mentor .seach_mentor_a a img{
+	padding-left: 30px;
+}
+.logos_empresas{
+	padding: 30px 0px;
+}
+.fondo_porcentajes_men{
+	background-color: #F3F3F3;
+	border-radius: 20px;
+	text-align: center;
+	padding: 24px;
+}
+.fondo_porcentajes_men p{
+	font-family: Helvetica Neue;
+	font-size: 48px;
+	font-weight: 700;
+	line-height: 42px;
+	letter-spacing: 0em;
+	text-align: center;
+}
+.fondo_porcentajes_men span{
+	font-family: 'DM Sans', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+	letter-spacing: 0em;
+	text-align: center;
+}
+.section_mentorias_listados_busquedas{
+	background-color: #F3F3F3;
+	padding: 64px 0px;
+}
+.section_mentorias_listados_busquedas h4{
+	margin-bottom: 24px;
+	font-size: 32px;
+	font-weight: 700;
+	line-height: 48px;
+	letter-spacing: 0em;
+	text-align: center;
+}
+.section_mentorias_listados_busquedas form .search_input .input-group{
+	border: 1px solid #DFDFE2;
+    border-radius: 50px;
+    padding: 10px;
+    background-color: #ffffff;
+    margin-bottom: 24px;
+}
+.section_mentorias_listados_busquedas form .search_input .input-group span{
+	background-color: transparent !important;
+    border: none !important;
+}
+.section_mentorias_listados_busquedas form .search_input .input-group input{
+	background-color: transparent;
+	box-shadow: none;
+    border: none;
+}
+.section_mentorias_listados_busquedas .ul_2_items{
+	border-bottom: 1px solid #BEBEBE;
+	margin-bottom: 24px !important;
+}
+.section_mentorias_listados_busquedas .ul_2_items li button{
+	font-family: 'DM Sans', sans-serif;
+	color: #2C2C2C;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 28px;
+	letter-spacing: 0em;
+	text-align: center;
+}
+.section_mentorias_listados_busquedas .ul_2_items li button.active{
+    color: #FF451C;
+    background-color: transparent !important;
+    border-bottom: 2px solid #FF451C;
+    border-radius: 0px;
+}
+
+
+.ul_tabs_dentro_areas .nav.nav-tabs{
+	border: 0px !important;
+	margin-bottom: 40px;
+}
+.ul_tabs_dentro_areas .nav .nav-link{
+	padding: 8px 10px 8px 10px;
+	border-radius: 100px;
+	border: 1px solid #FF451C;
+	margin: 0px 10px;
+	font-family: 'DM Sans', sans-serif;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 28px;
+	letter-spacing: 0em;
+	text-align: center;	
+	color: #2C2C2C;
+	background-color: #ffffff;
+}
+.ul_tabs_dentro_areas .nav .nav-link.active{
+	background-color: #FF451C;
+	color: #ffffff;
+	font-family: 'DM Sans', sans-serif;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 28px;
+	letter-spacing: 0em;
+	text-align: center;
+}
+
+
+.ul_tabs_dentro_areas2 .nav.nav-tabs{
+	border: 0px !important;
+	margin-bottom: 40px;
+}
+.ul_tabs_dentro_areas2 .nav .nav-link{
+	padding: 8px 10px 8px 10px;
+	border-radius: 100px;
+	border: 1px solid #FF451C;
+	margin: 0px 10px;
+	font-family: 'DM Sans', sans-serif;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 28px;
+	letter-spacing: 0em;
+	text-align: center;	
+	color: #2C2C2C;
+	background-color: #ffffff;
+}
+.ul_tabs_dentro_areas2 .nav .nav-link.active{
+	background-color: #FF451C;
+	color: #ffffff;
+	font-family: 'DM Sans', sans-serif;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 28px;
+	letter-spacing: 0em;
+	text-align: center;
+}
+
+
+.section_mentorias_listados_busquedas .card_item_me{
+	background-color: #ffffff;
+    padding: 16px 24px;
+    border-radius: 24px;
+    box-shadow: 0px 1px 20px 0px #00000014;
+    border: 1px solid #DFDFE2;
+}
+.section_mentorias_listados_busquedas .card_item_me .flex_price_star{
+	display: flex;
+	font-family: 'DM Sans', sans-serif;
+	font-size: 12px;
+	font-weight: 500;
+	line-height: 20px;
+	letter-spacing: 0em;
+	text-align: left;	
+}
+.section_mentorias_listados_busquedas .card_item_me .flex_price_star div{
+	width: 50%;
+	font-size: 13px;
+}
+.section_mentorias_listados_busquedas .card_item_me .flex_price_star .w_f_price{
+    width: fit-content;
+    float: right;
+    padding: 1px 10px;
+    background-color: #FF451C;
+    color: #ffffff;
+    border-radius: 22px;
+}
+.section_mentorias_listados_busquedas .img_perfil_empresa img{
+	border: 2.5px solid #1B1B1B;
+	border-radius: 125px;
+}
+.section_mentorias_listados_busquedas .img_perfil_empresa .img_perfil_img{
+	width: 100px;
+	height: 100px;
+	margin: auto;
+}
+.section_mentorias_listados_busquedas .img_perfil_empresa .img_perfil_img img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.section_mentorias_listados_busquedas .img_perfil_empresa .img_empresa{
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 40px;
+    text-align: center;
+    border: 2.5px solid #1B1B1B;
+    position: absolute;
+    left: 48px;
+    top: 60px;
+}
+.section_mentorias_listados_busquedas .img_perfil_empresa .img_empresa img{
+	    border: none;
+    border-radius: 125px;
+        width: fit-content;
+    margin: auto;
+}
+.section_mentorias_listados_busquedas .datos_usuario p{
+	font-family: 'DM Sans', sans-serif;
+	color: #2C2C2C;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 20px;
+	letter-spacing: 0em;
+	margin: 0px;
+	text-align: center;
+}
+.section_mentorias_listados_busquedas .datos_usuario span{
+	font-family: 'DM Sans', sans-serif;
+	color: #FF451C;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 20px;
+	letter-spacing: 0em;
+	text-align: center;
+}
+.section_mentorias_listados_busquedas .agendemos_a{
+	width: 100%;
+}
+.section_mentorias_listados_busquedas .agendemos_a a{
+	border: 2px solid #FF451C;
+	padding: 16px;
+	border-radius: 50px;
+	width: 100%;
+	display: block;
+	text-align: center;
+	font-family: 'DM Sans', sans-serif;
+	text-decoration: none;
+	color: #FF451C;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 20px;
+	letter-spacing: 0em;
+	text-align: center;
+}
+.section_mentorias_listados_busquedas .agendemos_a a:hover{
+	background-color: #FF451C;
+	color: #ffffff;
+}
+.section_mentorias_listados_busquedas .separador_user_link{
+	width: 50px;
+	margin: 10px auto;
+	border-bottom: 1px solid #DFDFE2;
+}
+.section_mentorias_listados_busquedas .redes_wb_links ul{
+	list-style: none;
+	padding: 0px;
+}
+.section_mentorias_listados_busquedas .redes_wb_links p{
+	font-family: 'DM Sans', sans-serif;
+	color: #2C2C2C;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 20px;
+	letter-spacing: 0em;
+	text-align: center;
+}

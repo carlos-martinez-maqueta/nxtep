@@ -97,44 +97,7 @@
               <div class="tab-content" id="pills-tabContent">
                 <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
                   <div class="row">
-                  <?php
-                    $con = mysqli_connect("localhost","root","","db_nxtep");
-                    $sql = "SELECT * FROM tbl_user";
-                    $resultado = $con->query($sql);
-                    while ($fila = $resultado->fetch_assoc()) { ?>  
                       <div class="col-lg-3">
-                        <div class="card_item_me">
-                          <div class="flex_price_star">
-                            <div><img src="assets/img/star.png" class="me-lg-2"><?php echo $fila['estrellas'] ?></div>
-                            <div class="text-end">S/<?php echo $fila['precio'] ?></div>
-                          </div>
-                          <div class="img_perfil_empresa text-center py-lg-4">
-                            <div class="position-relative">
-                              <div class="img_perfil_img"><img src="admin/<?php echo $fila['img_perfil'] ?>"></div>
-                              <div class="img_empresa"><img src="assets/img/empresa.png" class=""></div>
-                            </div>
-                          </div>
-
-                          <div class="datos_usuario text-center">
-                            <p><?php echo $fila['nombres'].'<br> '.$fila['apellidos'];  ?></p>
-                            <span><?php echo $fila['cargo'] ?> en <?php echo $fila['empresa'] ?></span>
-                          </div>
-                          <div class="separador_user_link"></div>
-
-                          <div class="redes_wb_links text-center">
-                            <ul>
-                              <li><a href="<?php echo $fila['linkedin'] ?>" target="_BLANCK"><img src="assets/img/lin-b.png"></a></li>
-                            </ul>
-
-                            <p>Experiencia: 3 años</p>
-                          </div>
-                        </div>
-                      </div>                                     
-                  <?php
-                      }
-                  ?>
-
-                    <!-- <div class="col-lg-3">
                       <div class="card_item_me">
                         <div class="flex_price_star">
                           <div><img src="assets/img/star.png" class="me-lg-2">10</div>
@@ -161,7 +124,7 @@
                         </div>
                       </div>
                     </div>                    
-                  </div>-->
+                  </div>
 
                 </div>
                 <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">...</div>

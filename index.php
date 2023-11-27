@@ -14,7 +14,7 @@
                 <p>La primera comunidad de Producto y Growth que te conecta con los recursos y apoyo que necesitas para impulsar tu carrera.</p>
 
                 <div class="button_a_banner">
-                  <a href=""><img src="assets/img/comunidad.png" class="me-2">Únete a nuestra comunidad</a>
+                  <a target="_BLANCK" href="https://nxtep-per.slack.com/join/shared_invite/zt-1j6bt5tna-Rh6O0b3l6oTeCzQG8f8YcA#/shared-invite/email"><img src="assets/img/comunidad.png" class="me-2">Únete a nuestra comunidad</a>
                 </div>
               </div>
             </div>
@@ -88,7 +88,7 @@
             </div>
 
             <div class="col-lg-12 py-lg-5 py-2 text-center div_center_button">
-              <div class="buton_fondo"><a href="nosotros.php">Conoce más de nosotros <img src="assets/img/mentor.png" class="ms-3"></a></div>
+              <div class="buton_fondo"><a target="_BLANCK" href="https://nxtep-per.slack.com/join/shared_invite/zt-1j6bt5tna-Rh6O0b3l6oTeCzQG8f8YcA#/shared-invite/email">Conoce más de nosotros <img src="assets/img/mentor.png" class="ms-3"></a></div>
             </div>
           </div>
         </div>
@@ -101,7 +101,7 @@
               <h2>Próximos eventos gratuitos</h2>
               <p>Se parte de nuestros eventos presenciales y online que tenemos para <br> ti, aprende más de Product & Growth, comparte tu experiencia en <br> este rubro y haz networking.</p>
 
-              <div class="buton_volun mt-lg-5"><a href="eventos.php"> Conoce más aquí <img src="assets/img/mentor.png" class="ms-3"></a></div>
+              <div class="buton_volun mt-lg-5"><a target="_BLANCK" href="https://pe.linkedin.com/company/nxtepla"> Conoce más aquí <img src="assets/img/mentor.png" class="ms-3"></a></div>
             </div>            
             <div class="col-lg-5 text-center">
               <img src="assets/img/voluntariado.png" class="img-fluid">
@@ -150,7 +150,7 @@
                 <div class="div_ment_3">
                   <p>¡Anímate a dar un paso más en tu carrera profesional!</p>
 
-                  <a href="mentorias.php">Conoce más aquí <img src="assets/img/flecha.png"></a>
+                  <a href="mentorias">Conoce más aquí <img src="assets/img/flecha.png"></a>
                 </div>
               </div>
             </div>
@@ -169,7 +169,7 @@
               <img src="assets/img/voluntariado.png" class="img-fluid d-lg-none d-block">
               <p>Estamos en búsqueda de voluntarios que les gustaría ayudar en el crecimiento de la comunidad para así llevar más conocimiento de Growth y Product en todo el país y próximamente LATAM.</p>
 
-              <div class="buton_volun"><a href="voluntariado.php">Conoce más aquí <img src="assets/img/mentor.png" class="ms-3"></a></div>
+              <div class="buton_volun"><a target="_BLANCK" href="https://docs.google.com/forms/d/e/1FAIpQLSdoD79ELsdgHNeNc2-8CNrjA-MKuGHrdCNvdNvCIcIyLMQPWw/closedform">Conoce más aquí <img src="assets/img/mentor.png" class="ms-3"></a></div>
             </div>
           </div>
         </div>

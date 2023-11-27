@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <?php include 'head.php'; ?>
 
   <body>
@@ -14,7 +14,7 @@
         <div class="container">
           <div class="row">
             <div class="col-lg-6 floter_p">
-              <p>Creemos en tu potencial y acompañamos con personas tu ruta profesional</p>
+              <p>CREEMOS EN TU POTENCIAL Y ACOMPAÑAMOS CON PERSONAS TU RUTA PROFESIONAL</p>
             </div>  
           </div>
         </div>
@@ -63,9 +63,12 @@
         <div class="container">
           <div class="row">
             <div class="col-lg-12 text-center">
-              <h3>¡Conoce a nuestro equipo!</h3>
-              <p>lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-              <p>lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+              <h3 class="mb-4">¡Conoce a nuestro equipo!</h3>
+              <p>
+                orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                <br>
+                lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+              </p>
             </div>
           </div>
 
@@ -97,11 +100,7 @@
               <div class="tab-content" id="pills-tabContent">
                 <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
                   <div class="row">
-<<<<<<< HEAD
-                      <div class="col-lg-3">
-=======
                     <div class="col-lg-3">
->>>>>>> de4412746dec0a0f24af8b071b84421837d80bdb
                       <div class="card_item_me">
                         <div class="flex_price_star">
                           <div><img src="assets/img/star.png" class="me-lg-2">10</div>

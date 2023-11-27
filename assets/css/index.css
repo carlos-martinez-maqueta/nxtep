@@ -23,12 +23,15 @@
 	text-align: center;
 	text-decoration: none;
 }
+.ul_nav ul li a:hover{
+	color: #FF451C;
+}
 
 .section_banner_home{
 	padding: 73px 0px 50px;
 }
 .section_banner_home .info_banner h2{
-	font-family: Helvetica Neue;
+	/* font-family: Helvetica Neue; */
 	font-size: 48px;
 	font-weight: 700;
 	line-height: 48px;
@@ -69,7 +72,7 @@
 	border-radius: 20px;
 }
 .section_banner_home .card_op p{
-	font-family: Helvetica Neue;
+	/* font-family: Helvetica Neue; */
 	font-size: 48px;
 	font-weight: 700;
 	line-height: 42px;
@@ -369,6 +372,9 @@
 	border-radius: 100px;
 	/*color: #BBBBBB;*/
 }
+.div_flex_form_boletin .input-group input:focus{
+	box-shadow: none;
+}
 .div_flex_form_boletin button{
     margin-left: 16px;
     background-color: #FF451C;
@@ -383,6 +389,10 @@
     border-radius: 100px;
     border: 0px;
     width: 258px;
+}
+.div_flex_form_boletin button:hover{
+	background-color: #FF6E1C;
+	cursor: pointer;
 }
 #mensaje h3{
 	font-size: 32px;

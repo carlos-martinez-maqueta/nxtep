@@ -16,8 +16,8 @@
         <form id="suscripcionForm" class="form_boletin">
           <div class="div_flex_form_boletin">
             <div class="input-group">
-              <span class="input-group-text" id="basic-addon1"><img src="assets/img/form.png"></span>
-              <input type="text" class="form-control" id="correo" placeholder="Coloca tu correo" aria-label="Username" required aria-describedby="basic-addon1">
+              <span class="input-group-text" id="basic-addon1"><img src="assets/img/form.png" draggable="false"></span>
+              <input type="text" class="form-control footer_correo" id="correo" placeholder="Coloca tu correo" aria-label="Username" required aria-describedby="basic-addon1">
             </div>            
             <button type="submit">Suscríbete <img src="assets/img/mentor.png" class="ms-2"></button>
           </div>

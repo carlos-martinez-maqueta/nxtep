@@ -161,6 +161,15 @@
 	color: #2C2C2C;
 	background-color: #ffffff;
 }
+
+.nav_tab_filter{
+	cursor: pointer;
+}
+.area_radio:checked + .nav_tab_filter {
+	background-color: #FF451C;
+	color: #ffffff;
+}
+
 .ul_tabs_dentro_areas2 .nav .nav-link.active{
 	background-color: #FF451C;
 	color: #ffffff;

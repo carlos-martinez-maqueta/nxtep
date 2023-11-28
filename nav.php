@@ -8,7 +8,7 @@
         <div class="ul_nav d-lg-block d-none">
           <ul>
             <li class=""><a href="nosotros">Nosotros</a></li>
-            <li class="d-none"><a href="eventos.php">Eventos</a></li>
+            <li class=""><a href="eventos">Eventos</a></li>
             <li class=""><a href="mentorias">Mentorías</a></li>
             <li class="d-none"><a href="voluntariado.php">Voluntariado</a></li>
           </ul>

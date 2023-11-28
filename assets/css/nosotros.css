@@ -196,3 +196,14 @@
 	letter-spacing: 0em;
 	text-align: center;
 }
+
+.owl-carousel {
+	display: flex;
+	align-items: center;
+}
+  
+.owl-carousel .item img {
+	width: 100%; /* Ajusta el tamaño de las imágenes según sea necesario */
+	height: auto;
+}
+  

@@ -5,7 +5,7 @@
 	padding: 80px 0px;
 }
 .title_in h2{
-	font-family: Helvetica Neue;
+	/* font-family: 'Helvetica Neue'; */
 	font-size: 32px;
 	font-weight: 700;
 	line-height: 54px;
@@ -23,6 +23,10 @@
 .a_link_in{
 	margin-top: 63px;
 }
+.section_linkedin a:hover{
+	background-color: #FF6E1C;
+}
+
 .section_linkedin a img{
 	margin-right: 8px;
 }
@@ -34,7 +38,7 @@
 	margin-bottom: 68px;
 }
 .eventos_list .title_p_eventos h2{
-	font-family: Helvetica Neue;
+	/* font-family: 'Helvetica Neue'; */
 	font-size: 32px;
 	font-weight: 700;
 	line-height: 54px;
@@ -149,4 +153,12 @@
     color: #ffffff;
     text-decoration: none;   
     box-shadow: 0px 6px 10px 0px #00000029;
+}
+.eventos_list .card_evento_item .incribete_a_evento a:hover{
+	background-color: #FF6E1C;
+}
+
+/* LINKEDIN SECTION */
+.linkedin_items iframe{
+	width: 100% !important;
 }

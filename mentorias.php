@@ -80,19 +80,27 @@
               <div class="tab-content" id="pills-tabContent">
                 <div class="tab-pane fade show active" id="pills-areas" role="tabpanel" aria-labelledby="pills-areas-tab" tabindex="0">
                   <!-- areas.php -->
-
                   <nav class="ul_tabs_dentro_areas">
-                    <div class="nav nav-tabs row " id="nav_tab_areas" role="tablist">
-                    </div>
+                    <div class="nav nav-tabs row " id="nav_tab_areas" role="tablist"></div>
                   </nav>
                   <div class="tab-content" id="nav-tabContent">
                     <div class="tab-pane fade show active" id="nav-all" role="tabpanel" aria-labelledby="nav-all-tab" tabindex="0">
-                      <div class="row " id="mentoresCardsContainer">
-                      </div>
+                      <div class="row " id="mentoresCardsContainer"></div>
                     </div>
-
                   </div>
+                </div>
 
+                <div class="tab-pane fade show" id="pills-temas" role="tabpanel" aria-labelledby="pills-temas-tab" tabindex="0">
+                  <!-- TODO: temas.php  -->
+                  <p>Temas...</p>
+                  <nav class="ul_tabs_dentro_areas">
+                    <div class="nav nav-tabs row " id="nav_tab_temas" role="tablist"></div>
+                  </nav>
+                  <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="nav-all" role="tabpanel" aria-labelledby="nav-all-tab" tabindex="0">
+                      <div class="row " id="mentoresCardsContainer"></div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </form>

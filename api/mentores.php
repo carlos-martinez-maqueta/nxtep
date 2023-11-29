@@ -4,6 +4,7 @@
 if ($_SERVER['REQUEST_METHOD'] === 'GET') {
 
     $area_id = isset($_GET['filter_area']) ? $_GET['filter_area'] : '';
+    $area_id = isset($_GET['filter_tema']) ? $_GET['filter_tema'] : ''; //TODO: Implementar
     $search = isset($_GET['search']) ? $_GET['search'] : '';
 
     try {

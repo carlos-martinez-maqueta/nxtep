@@ -4,8 +4,10 @@
 if ($_SERVER['REQUEST_METHOD'] === 'GET') {
 
     $area_id = isset($_GET['filter_area']) ? $_GET['filter_area'] : '';
-    $area_id = isset($_GET['filter_tema']) ? $_GET['filter_tema'] : ''; //TODO: Implementar
+    $tema_id = isset($_GET['filter_tema']) ? $_GET['filter_tema'] : '';
     $search = isset($_GET['search']) ? $_GET['search'] : '';
+
+    $all_data = [];
 
     try {
         require("model/Mentor.php");
@@ -13,8 +15,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
 
         if ($area_id != "" && $area_id != '0') {
             $all_data = $mentores->get_by_area($area_id);
+
+        }else if ($tema_id != "" && $tema_id != '0') {
+            $all_data = $mentores->get_by_tema($tema_id);
+
         } else if ($search != '') {
             $all_data = $mentores->get_by_search($search);
+
         } else {
             $all_data = $mentores->get_all();
         }

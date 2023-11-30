@@ -142,12 +142,12 @@
 	text-align: center;
 }
 
-
-.ul_tabs_dentro_areas2 .nav.nav-tabs{
+.ul_tabs_dentro_temas .nav.nav-tabs{
 	border: 0px !important;
 	margin-bottom: 40px;
 }
-.ul_tabs_dentro_areas2 .nav .nav-link{
+
+.ul_tabs_dentro_temas .nav .nav-link{
 	padding: 8px 10px 8px 10px;
 	border-radius: 100px;
 	border: 1px solid #FF451C;
@@ -161,6 +161,17 @@
 	color: #2C2C2C;
 	background-color: #ffffff;
 }
+.ul_tabs_dentro_temas .nav .nav-link.active{
+	background-color: #FF451C;
+	color: #ffffff;
+	font-family: 'DM Sans', sans-serif;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 28px;
+	letter-spacing: 0em;
+	text-align: center;
+}
+
 
 .nav_tab_filter{
 	cursor: pointer;
@@ -170,15 +181,9 @@
 	color: #ffffff;
 }
 
-.ul_tabs_dentro_areas2 .nav .nav-link.active{
+.tema_radio:checked + .nav_tab_filter {
 	background-color: #FF451C;
 	color: #ffffff;
-	font-family: 'DM Sans', sans-serif;
-	font-size: 16px;
-	font-weight: 500;
-	line-height: 28px;
-	letter-spacing: 0em;
-	text-align: center;
 }
 
 
@@ -302,4 +307,62 @@
 	line-height: 20px;
 	letter-spacing: 0em;
 	text-align: center;
+}
+
+/* TODO: Hacer esta sección responsive  */
+.section_guia_mentoria{
+	padding: 50px 0px 70px;
+	background-color: #FFF;
+}
+.section_guia_mentoria h2{
+	font-size: 32px;
+	font-weight: 700;
+	line-height: 25px;
+	letter-spacing: 0em;
+	text-align: center;
+}
+.guia_mentoria {
+    display: flex;
+    margin-top: 75px;
+}
+
+
+.guia_mentoria .item_guia_mentoria {
+    position: relative;
+}
+
+.guia_mentoria .item_guia_mentoria:not(:last-child)::before {
+	content: "";
+    position: absolute;
+    top: 20%;
+    left: 100%;
+    transform: translate(-50%, -50%);
+    width: 79%;
+    z-index: 9999;
+    border: 0.2px dashed #ff451c;
+}
+
+.guia_mentoria .item_guia_mentoria .circle_naranja {
+    width: 40px;
+    height: 40px;
+    background-color: #FF451C;
+    margin: auto auto 30px;
+    display: flex;
+	justify-content: center;
+	align-items: center;
+    border-radius: 50%;
+    color: #ffffff;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0.02em;
+}
+.guia_mentoria .item_guia_mentoria p{
+	font-family: 'DM Sans', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 21px;
+	letter-spacing: 0.02em;
+	text-align: left;
 }

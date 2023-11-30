@@ -53,6 +53,44 @@
       </div>
     </section>
 
+    <section class="section_guia_mentoria text-center">
+      <div class="container my-5">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2>Proceso para recibir mi mentoría</h2>
+          </div>
+          <div class="col-lg-12">
+            <div class="guia_mentoria">
+              <div class="item_guia_mentoria">
+                <div class="text-center circle_naranja">1</div>
+                <div class="px-lg-5 px-3">
+                  <h6>Elige una categoría</h6>                  
+                </div>
+              </div>
+              <div class="item_guia_mentoria">
+                <div class="text-center circle_naranja">2</div>
+                <div class="px-lg-5 px-3">
+                  <h6>Elige a tu mentor</h6>                  
+                </div>
+              </div> 
+              <div class="item_guia_mentoria">
+                <div class="text-center circle_naranja">3</div>
+                <div class="px-lg-5 px-3">
+                  <h6>Agenda tu espacio</h6>
+                </div>
+              </div> 
+              <div class="item_guia_mentoria">
+                <div class="text-center circle_naranja">4</div>
+                <div class="px-lg-5 px-3">
+                  <h6>Realiza el pago</h6>                  
+                </div>
+              </div>                                                
+            </div>
+          </div>            
+        </div>
+      </div>
+    </section>
+
     <section class="section_mentorias_listados_busquedas">
       <div class="container">
         <div class="row">
@@ -79,26 +117,23 @@
               </ul>
               <div class="tab-content" id="pills-tabContent">
                 <div class="tab-pane fade show active" id="pills-areas" role="tabpanel" aria-labelledby="pills-areas-tab" tabindex="0">
-                  <!-- areas.php -->
                   <nav class="ul_tabs_dentro_areas">
                     <div class="nav nav-tabs row " id="nav_tab_areas" role="tablist"></div>
                   </nav>
                   <div class="tab-content" id="nav-tabContent">
                     <div class="tab-pane fade show active" id="nav-all" role="tabpanel" aria-labelledby="nav-all-tab" tabindex="0">
-                      <div class="row " id="mentoresCardsContainer"></div>
+                      <div class="row " id="mentoresAreasCardsContainer"></div>
                     </div>
                   </div>
                 </div>
 
                 <div class="tab-pane fade show" id="pills-temas" role="tabpanel" aria-labelledby="pills-temas-tab" tabindex="0">
-                  <!-- TODO: temas.php  -->
-                  <p>Temas...</p>
-                  <nav class="ul_tabs_dentro_areas">
+                  <nav class="ul_tabs_dentro_temas">
                     <div class="nav nav-tabs row " id="nav_tab_temas" role="tablist"></div>
                   </nav>
                   <div class="tab-content" id="nav-tabContent">
                     <div class="tab-pane fade show active" id="nav-all" role="tabpanel" aria-labelledby="nav-all-tab" tabindex="0">
-                      <div class="row " id="mentoresCardsContainer"></div>
+                      <div class="row " id="mentoresTemasCardsContainer"></div>
                     </div>
                   </div>
                 </div>

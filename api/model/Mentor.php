@@ -24,6 +24,14 @@ class Mentor extends Conexion
                                                 WHERE tma.area_id='$id' ");
         return $result->fetch_all(MYSQLI_ASSOC);
     }
+    
+    public function get_by_tema($id)
+    {
+        $result = $this->conexion_db->query("SELECT * FROM tbl_mentores tm
+                                                INNER JOIN tbl_mentores_temas tmt ON tm.id=tmt.mentor_id 
+                                                WHERE tmt.tema_id='$id' ");
+        return $result->fetch_all(MYSQLI_ASSOC);
+    }
 
     public function get_by_search($search)
     {

@@ -4,7 +4,10 @@
 if ($_SERVER['REQUEST_METHOD'] === 'GET') {
 
     $area_id = isset($_GET['filter_area']) ? $_GET['filter_area'] : '';
+    $tema_id = isset($_GET['filter_tema']) ? $_GET['filter_tema'] : '';
     $search = isset($_GET['search']) ? $_GET['search'] : '';
+
+    $all_data = [];
 
     try {
         require("model/Mentor.php");
@@ -12,8 +15,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
 
         if ($area_id != "" && $area_id != '0') {
             $all_data = $mentores->get_by_area($area_id);
+
+        }else if ($tema_id != "" && $tema_id != '0') {
+            $all_data = $mentores->get_by_tema($tema_id);
+
         } else if ($search != '') {
             $all_data = $mentores->get_by_search($search);
+
         } else {
             $all_data = $mentores->get_all();
         }
@@ -43,11 +51,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
             'empresa' => $value['empresa'],
             'linkedin' => $value['linkedin'],
             'experiencia' => $value['experiencia'],
+            'agenda' => $value['agenda'],
             'area' => $value['area'],
             'tema' => $value['tema'],
             'img_perfil' => $value['img_perfil'],
             'img_perfil_url' => $_SERVER['HTTP_HOST'] . "/admin/" . $value['img_perfil'],
-            'img_empresa' => $value['img_perfil'],
+            'img_empresa' => $value['img_logo'],
             'img_empresa_url' => $_SERVER['HTTP_HOST'] . "/admin/" . $value['img_logo'],
         ];
         array_push($data_response, $temp);

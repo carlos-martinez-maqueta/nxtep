@@ -41,7 +41,7 @@ if (!isset($_SESSION['user_id'])) {
               <div class="card-body">
                 <div class="align-items-center justify-content-between mb-9">
                   <div class="mb-4">
-                    <h5 class="card-title fw-semibold">AGREGAR MENTORES</h5>
+                    <h5 class="card-title fw-semibold">AGREGAR RESEÑAS</h5>
                   </div>
                   <form method="POST" enctype="multipart/form-data" id="myForm">
                       <div class="row">
@@ -52,15 +52,7 @@ if (!isset($_SESSION['user_id'])) {
                           <div class="mb-3 col-lg-4">
                               <label for="" class="form-label">Apellidos</label>
                               <input type="text" class="form-control" id="" name="apellidos" placeholder="" required>
-                          </div>  
-                          <div class="mb-3 col-lg-2">
-                              <label for="" class="form-label">Precio</label>
-                              <input type="text" class="form-control" id="" name="precio" placeholder="" required>
-                          </div>  
-                          <div class="mb-3 col-lg-2">
-                              <label for="" class="form-label">Estrellas</label>
-                              <input type="text" class="form-control" id="" name="estrellas" placeholder="" required>
-                          </div>                        
+                          </div>         
                           <div class="mb-3 col-lg-4">
                               <label for="" class="form-label">Cargo</label>
                               <input type="text" class="form-control" id="" name="cargo" placeholder="" required>
@@ -72,72 +64,15 @@ if (!isset($_SESSION['user_id'])) {
                           <div class="mb-3 col-lg-4">
                               <label for="" class="form-label">Link Linkedin</label>
                               <input type="text" class="form-control" id="" name="linkedin" placeholder="" required>
-                          </div>  
-                          <div class="mb-3 col-lg-2">
-                              <label for="" class="form-label">Años de Experiencia</label>
-                              <input type="text" class="form-control" id="" name="experiencia" placeholder="" required>
-                          </div> 
-                          <div class="mb-3 col-lg-10">
-                              <label for="" class="form-label">Link Agenda</label>
-                              <input type="text" class="form-control" id="" name="agenda" placeholder="" required>
-                          </div>                           
+                          </div>              
                           <div class="mb-3 col-lg-4">
                               <label for="" class="form-label">Imagen Perfil</label>
                               <input class="form-control" type="file" id="" name="img_perfil" required>
-                          </div>
-                          <div class="mb-3 col-lg-4">
-                              <label for="" class="form-label">Imagen Logo</label>
-                              <input class="form-control" type="file" id="" name="img_logo" required>
-                          </div>                       
-                          <div class="mb-3 col-lg-8">
-                              <label for="" class="form-label">Áreas</label>
-                              <br>
-                              <div class="form-check form-check-inline">
-                                  <input class="form-check-input" type="checkbox" id="area1" name="areas[]" value="1">
-                                  <label class="form-check-label" for="area1">Product</label>
-                              </div>
-                              <div class="form-check form-check-inline">
-                                  <input class="form-check-input" type="checkbox" id="area2" name="areas[]" value="2">
-                                  <label class="form-check-label" for="area2">Growth</label>
-                              </div> 
-                              <div class="form-check form-check-inline">
-                                  <input class="form-check-input" type="checkbox" id="area3" name="areas[]" value="3">
-                                  <label class="form-check-label" for="area3">Marketing</label>
-                              </div>
-                              <div class="form-check form-check-inline">
-                                  <input class="form-check-input" type="checkbox" id="area4" name="areas[]" value="4">
-                                  <label class="form-check-label" for="area4">People</label>
-                              </div> 
-                              <div class="form-check form-check-inline">
-                                  <input class="form-check-input" type="checkbox" id="area5" name="areas[]" value="5">
-                                  <label class="form-check-label" for="area5">Diseño</label>
-                              </div>                                                                                           
-                          </div> 
-                          <div class="mb-3 col-lg-12">
-                              <label for="" class="form-label">Temas</label>
-                              <br>
-                              <div class="form-check form-check-inline">
-                                  <input class="form-check-input" type="checkbox" id="tema1" name="temas[]" value="1">
-                                  <label class="form-check-label" for="tema1">Mejorar mi CV</label>
-                              </div>
-                              <div class="form-check form-check-inline">
-                                  <input class="form-check-input" type="checkbox" id="tema2" name="temas[]" value="2">
-                                  <label class="form-check-label" for="tema2">Optimizar Linkedin</label>
-                              </div> 
-                              <div class="form-check form-check-inline">
-                                  <input class="form-check-input" type="checkbox" id="tema3" name="temas[]" value="3">
-                                  <label class="form-check-label" for="tema3">Apoyo con un desafío</label>
-                              </div>
-                              <div class="form-check form-check-inline">
-                                  <input class="form-check-input" type="checkbox" id="tema4" name="temas[]" value="4">
-                                  <label class="form-check-label" for="tema4">Aumentar mis ventas</label>
-                              </div> 
-                              <div class="form-check form-check-inline">
-                                  <input class="form-check-input" type="checkbox" id="tema5" name="temas[]" value="5">
-                                  <label class="form-check-label" for="tema5">Estrategias Digitales</label>
-                              </div>                                                                                           
-                          </div>                                                                                                                                                         
-
+                          </div>  
+                          <div class="mb-3 col-6">
+                                <label for="exampleFormControlTextarea1" class="form-label">Reseña Mentee</label>
+                                <textarea class="form-control" name="resena" id="exampleFormControlTextarea1" rows="3"></textarea>
+                          </div>                                                                                                                                                                          
                           <div class="mt-4 col-lg-12">
                               <button type="submit" class="btn w-100 py-2 btn-primary">Guardar</button>
                           </div>                                          
@@ -145,7 +80,6 @@ if (!isset($_SESSION['user_id'])) {
                   </form>
                   <div id="responseMessage"></div>
                 </div>
-                 
               </div>
             </div>
           </div>
@@ -194,7 +128,7 @@ if (!isset($_SESSION['user_id'])) {
 
           $.ajax({
               type: 'POST',
-              url: 'addUser.php',
+              url: 'addUserRese.php',
               data: formData,
               dataType: 'json',
               contentType: false,
@@ -209,7 +143,7 @@ if (!isset($_SESSION['user_id'])) {
                   $('form').hide();
                   // Oculta el formulario después de 3 segundos
                   setTimeout(function() {
-                     window.location.href = "index.php";
+                     window.location.href = "resena-mentees.php";
                   }, 3000);
                
               },

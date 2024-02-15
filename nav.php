@@ -2,7 +2,7 @@
   <div class="container">
     <div class="row justify-content-between">
       <div class="col-lg-6">
-        <a href="/"><img src="assets/img/logo.png"></a>
+        <a href="./"><img src="assets/img/logo.png"></a>
       </div>
       <div class="col-lg-4">
         <div class="ul_nav d-lg-block d-none">

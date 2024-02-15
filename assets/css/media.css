@@ -96,6 +96,53 @@
 	.mentores .div_ment_3 p{
 		margin-bottom: 30px;
 	}
+	.fondo_porcentajes_men{
+		padding: 20px;
+	}
+	.fondo_porcentajes_men p{
+		    font-size: 38px;
+	}
+	.fondo_porcentajes_men span{
+		    font-size: 14px;
+		        line-height: 3px;
+	}
+	.section_banner_mentor {
+	    padding: 64px 0px 0px;
+	}	
+	.guia_mentoria .item_guia_mentoria:not(:last-child)::before{
+		top: 15%;
+	}
+	.section_mentorias_listados_busquedas .ul_2_items li{
+	    width: 50% !important;
+	    text-align: center;
+	}
+	.section_mentorias_listados_busquedas .ul_2_items li button{
+		width: 100%;
+	}
+	.section_mentorias_listados_busquedas .card_item_me{
+		width: 88%;
+		margin: 0px auto 15px;
+	}
+	.section_informacion_time_mentoria{
+		padding: 10px 0px;
+		margin-top: 30px;
+	}
+	.section_informacion_time_mentoria .title_btm_margin h2{
+		font-size: 27px;
+		line-height: normal;
+	}
+	.ul_tabs_dentro_temas .nav .nav-link{
+		    font-size: 13px;
+    line-height: 14px;
+    padding: 5px 18px;
+        margin: 0px 5px;
+	}
+	.img_perfil_empresa {
+		margin-bottom: 30px;
+	}
+	.section_guia_mentoria{
+		    padding: 15px 0px 15px;
+	}
 	.div_titles_volun{
 		padding: 0px 15px 0px;
 	}

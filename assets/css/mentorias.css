@@ -2,7 +2,7 @@
 	padding: 64px 0px;
 }
 .section_banner_mentor .title_mentorias h2{
-	font-family: Helvetica Neue;
+	/*font-family: Helvetica Neue;*/
 	font-size: 32px;
 	font-weight: 700;
 	line-height: 32px;
@@ -49,7 +49,7 @@
 	padding: 24px;
 }
 .fondo_porcentajes_men p{
-	font-family: Helvetica Neue;
+	/*font-family: Helvetica Neue;*/
 	font-size: 48px;
 	font-weight: 700;
 	line-height: 42px;
@@ -142,12 +142,12 @@
 	text-align: center;
 }
 
-
-.ul_tabs_dentro_areas2 .nav.nav-tabs{
+.ul_tabs_dentro_temas .nav.nav-tabs{
 	border: 0px !important;
 	margin-bottom: 40px;
 }
-.ul_tabs_dentro_areas2 .nav .nav-link{
+
+.ul_tabs_dentro_temas .nav .nav-link{
 	padding: 8px 10px 8px 10px;
 	border-radius: 100px;
 	border: 1px solid #FF451C;
@@ -161,6 +161,17 @@
 	color: #2C2C2C;
 	background-color: #ffffff;
 }
+.ul_tabs_dentro_temas .nav .nav-link.active{
+	background-color: #FF451C;
+	color: #ffffff;
+	font-family: 'DM Sans', sans-serif;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 28px;
+	letter-spacing: 0em;
+	text-align: center;
+}
+
 
 .nav_tab_filter{
 	cursor: pointer;
@@ -170,15 +181,9 @@
 	color: #ffffff;
 }
 
-.ul_tabs_dentro_areas2 .nav .nav-link.active{
+.tema_radio:checked + .nav_tab_filter {
 	background-color: #FF451C;
 	color: #ffffff;
-	font-family: 'DM Sans', sans-serif;
-	font-size: 16px;
-	font-weight: 500;
-	line-height: 28px;
-	letter-spacing: 0em;
-	text-align: center;
 }
 
 
@@ -214,15 +219,23 @@
 	border: 2.5px solid #1B1B1B;
 	border-radius: 125px;
 }
-.section_mentorias_listados_busquedas .img_perfil_empresa .img_perfil_img{
+.section_mentorias_listados_busquedas .img_perfil_empresa .contendor_perfil_user{
+    width: 100px;
+    height: 100px;
+    margin: auto;
+}
+.section_mentorias_listados_busquedas .img_perfil_empresa .contendor_perfil_user img{
+
+}
+.section_mentorias_listados_busquedas .img_perfil_empresa .contendor_perfil_user{
 	width: 100px;
 	height: 100px;
 	margin: auto;
 }
-.section_mentorias_listados_busquedas .img_perfil_empresa .img_perfil_img img{
+.section_mentorias_listados_busquedas .img_perfil_empresa .contendor_perfil_user img{
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    object-fit: cover;
 }
 .section_mentorias_listados_busquedas .img_perfil_empresa .img_empresa{
     width: 55px;
@@ -234,14 +247,15 @@
     text-align: center;
     border: 2.5px solid #1B1B1B;
     position: absolute;
-    left: 48px;
+    left: -13px;
     top: 60px;
 }
 .section_mentorias_listados_busquedas .img_perfil_empresa .img_empresa img{
-	    border: none;
+border: none;
     border-radius: 125px;
-        width: fit-content;
+    width: 100%;
     margin: auto;
+    object-fit: cover;
 }
 .section_mentorias_listados_busquedas .datos_usuario p{
 	font-family: 'DM Sans', sans-serif;
@@ -302,4 +316,107 @@
 	line-height: 20px;
 	letter-spacing: 0em;
 	text-align: center;
+}
+.section_informacion_time_mentoria{
+	background-color: #F3F3F3;
+	padding: 50px 0px;
+}
+.section_informacion_time_mentoria .title_btm_margin {
+	margin-bottom: 35px;
+}
+.section_informacion_time_mentoria .title_btm_margin h2{
+	font-size: 32px;
+	font-weight: 700;
+	line-height: 25px;
+	letter-spacing: 0em;
+	text-align: center;
+}
+.section_informacion_time_mentoria .div_col_item .flex_items{
+	display: flex;
+    background-color: #ffffff;
+    margin: 0px 0px 15px;
+    padding: 10px 10px;
+    border: 1px solid #DFDFE2;
+    border-radius: 16px;
+}
+.section_informacion_time_mentoria .div_col_item .flex_items p{
+	margin: 0px;
+}
+.section_informacion_time_mentoria .div_col_item .flex_items div{
+	margin: 0px 5px;
+}
+/* TODO: Hacer esta sección responsive  */
+.section_guia_mentoria{
+	padding: 50px 0px 70px;
+	background-color: #FFF;
+}
+.section_guia_mentoria h2{
+	font-size: 32px;
+	font-weight: 700;
+	line-height: 25px;
+	letter-spacing: 0em;
+	text-align: center;
+}
+.guia_mentoria {
+    display: flex;
+    width: fit-content;
+    margin: 75px auto 0px;
+}
+
+
+.guia_mentoria .item_guia_mentoria {
+    position: relative;
+}
+
+.guia_mentoria .item_guia_mentoria:not(:last-child)::before {
+	content: "";
+    position: absolute;
+    top: 20%;
+    left: 100%;
+    transform: translate(-50%, -50%);
+    width: 79%;
+    z-index: 9999;
+    border: 0.2px dashed #ff451c;
+}
+
+.guia_mentoria .item_guia_mentoria .circle_naranja {
+    width: 40px;
+    height: 40px;
+    background-color: #FF451C;
+    margin: auto auto 30px;
+    display: flex;
+	justify-content: center;
+	align-items: center;
+    border-radius: 50%;
+    color: #ffffff;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0.02em;
+}
+.guia_mentoria .item_guia_mentoria p{
+	font-family: 'DM Sans', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 21px;
+	letter-spacing: 0.02em;
+}
+#nav_tab_areas{
+    display: flex;
+    overflow-x: scroll;
+}
+#nav_tab_temas{
+	    display: flex;
+    overflow-x: scroll;
+}
+.slider-ul .owl-stage{
+	width: 100% !important;
+}
+.slider-ul .owl-stage .owl-item{
+	width: 100% !important;	
+}
+.ul_tabs_dentro_areas .nav .nav-link{
+	padding: 8px 15px 8px 15px;
+	margin: 0px 6px;
 }

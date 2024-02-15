@@ -1,27 +1,33 @@
 $(document).ready(function () {
 
     const apiAreasUrl = 'api/areas.php';
+    const apiTemasUrl = 'api/temas.php';
     const apiMentoresUrl = 'api/mentores.php';
 
-    const navTabContainer = document.getElementById('nav_tab_areas');
-    const mentoresCardsContainer = document.getElementById('mentoresCardsContainer');
+    const navTabAreasContainer = document.getElementById('nav_tab_areas');
+    const navTabTemasContainer = document.getElementById('nav_tab_temas');
+    const mentoresAreasCardsContainer = document.getElementById('mentoresAreasCardsContainer');
+    const mentoresTemasCardsContainer = document.getElementById('mentoresTemasCardsContainer');
 
 
     // Ejecutar la lógica de la aplicación
     (async () => {
         const areasList = await fetchData(apiAreasUrl);
+        const temasList = await fetchData(apiTemasUrl);
         const mentoresList = await fetchData(apiMentoresUrl);
 
         if (areasList.length > 0) {
-            buildNavTabs(areasList, navTabContainer, apiMentoresUrl);
-            buildMentorCard(mentoresList, mentoresCardsContainer);
+            buildNavTabsArea(areasList, navTabAreasContainer, apiMentoresUrl);
+            buildNavTabsTema(temasList, navTabTemasContainer, apiMentoresUrl);
+            buildMentorCard(mentoresList, mentoresAreasCardsContainer);
+            buildMentorCard(mentoresList, mentoresTemasCardsContainer);
         }
     })();
 
     $("#mentorias_form").on('submit', function (e) { e.preventDefault() });
 
     // Manejar el evento de entrada en el cuadro de búsqueda
-    $('#search_input input').on('input', function (e) {
+    $('#search_input').on('input', function (e) {
         e.preventDefault();
         buscarMentor(apiMentoresUrl, e.target.value)
     });
@@ -46,12 +52,24 @@ async function fetchData(url) {
 };
 
 // Función para construir las tabs para cada área
-function buildNavTabs(dataList, elementId, mentoresUrl) {
+function buildNavTabsArea(dataList, elementId, mentoresUrl) {
     let temp = `<input type="radio" class="area_radio d-none" id="radio_0" name="filter_area" checked value="">
-                    <label for="radio_0" class="nav-link col nav_tab_filter" onclick="filtrarMentores('${mentoresUrl}', 0)">Todos</label>`;
+                    <label for="radio_0" class="nav-link col nav_tab_filter" onclick="filtrarMentores('${mentoresUrl}', 'filter_area', 0)">Todos</label>`;
     dataList.forEach(item => {
         const cardHtml = `<input type="radio" class="area_radio d-none" id="radio_${item.id}" name="filter_area" value="${item.id}">
-                            <label for="radio_${item.id}" class="nav-link col nav_tab_filter" onclick="filtrarMentores('${mentoresUrl}', ${item.id})">${item.title_area}</label>`;
+                            <label for="radio_${item.id}" class="nav-link col nav_tab_filter" onclick="filtrarMentores('${mentoresUrl}', 'filter_area', ${item.id})">${item.title_area}</label>`;
+        temp += cardHtml;
+    });
+    elementId.innerHTML = temp;
+};
+
+// Función para construir las tabs para cada tema
+function buildNavTabsTema(dataList, elementId, mentoresUrl) {
+    let temp = `<input type="radio" class="tema_radio d-none" id="radio_tema_0" name="filter_tema" checked value="">
+                    <label for="radio_tema_0" class="nav-link col d-flex align-items-center justify-content-center nav_tab_filter" onclick="filtrarMentores('${mentoresUrl}', 'filter_tema', 0)">Todos</label>`;
+    dataList.forEach(item => {
+        const cardHtml = `<input type="radio" class="tema_radio d-none" id="radio_tema_${item.id}" name="filter_tema" value="${item.id}">
+                            <label for="radio_tema_${item.id}" class="nav-link col d-flex align-items-center justify-content-center nav_tab_filter" onclick="filtrarMentores('${mentoresUrl}', 'filter_tema', ${item.id})">${item.title_tema}</label>`;
         temp += cardHtml;
     });
     elementId.innerHTML = temp;
@@ -72,14 +90,14 @@ function buildMentorCard(dataList, elementId) {
                           </div>
                         </div>
                         <div class="img_perfil_empresa text-center py-lg-4">
-                          <div class="position-relative">
-                            <img src="assets/img/avatar.png">
-                            <div class="img_empresa"><img src="assets/img/empresa.png" class=""></div>
+                          <div class="position-relative contendor_perfil_user">
+                            <img src="admin/${item.img_perfil}">
+                            <div class="img_empresa"><img src="admin/${item.img_empresa}" class=""></div>
                           </div>
                         </div>
                         <div class="datos_usuario text-center">
                           <p>${item.nombre_completo}</p>
-                          <span>${item.empresa}</span>
+                          <span>${item.cargo} en ${item.empresa}</span>
                         </div>
                         <div class="separador_user_link"></div>
                         <div class="redes_wb_links text-center">
@@ -89,7 +107,7 @@ function buildMentorCard(dataList, elementId) {
                           <p>Experiencia: ${item.experiencia} años</p>
                         </div>
                         <div class="agendemos_a">
-                          <a href="#">Agendemos</a>
+                          <a href="${item.agenda}" target="_blank">Agendemos</a>
                         </div>
                       </div>
                     </div>
@@ -103,14 +121,20 @@ function buildMentorCard(dataList, elementId) {
 };
 
 //Filtrar
-async function filtrarMentores(api_url, area_id) {
-    const mentoresList = await fetchData(api_url + "?filter_area=" + area_id);
-    buildMentorCard(mentoresList, mentoresCardsContainer);
+async function filtrarMentores(api_url, param, area_id) {
+    const finalUrl = api_url + "?" + param + "=" + area_id;
+    const mentoresList = await fetchData(finalUrl);
+
+    if (param == 'filter_area'){
+      buildMentorCard(mentoresList, mentoresAreasCardsContainer);
+    }else if (param == 'filter_tema'){
+      buildMentorCard(mentoresList, mentoresTemasCardsContainer);
+    }
 }
 
 //Buscar 
 async function buscarMentor(api_url, search_input) {
     const finalUrl = api_url + "?search=" + search_input;
     const mentoresList = await fetchData(finalUrl);
-    buildMentorCard(mentoresList, mentoresCardsContainer);
+    buildMentorCard(mentoresList, mentoresAreasCardsContainer);
 }

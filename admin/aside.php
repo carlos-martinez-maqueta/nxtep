@@ -36,7 +36,23 @@
                 <span class="hide-menu">Listado Mentores</span>
               </a>
             </li>
-            <li class="nav-small-cap ">
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="./info-mentorias.php" aria-expanded="false">
+                <span>
+                  <i class="ti ti-article"></i>
+                </span>
+                <span class="hide-menu">Información</span>
+              </a>
+            </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="./resena-mentees.php" aria-expanded="false">
+                <span>
+                  <i class="ti ti-article"></i>
+                </span>
+                <span class="hide-menu">Reseña Mentees</span>
+              </a>
+            </li>
+            <li class="nav-small-cap d-none">
               <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
               <span class="hide-menu">LISTADO MENTORES</span>
             </li>            
